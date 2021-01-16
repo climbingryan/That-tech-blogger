@@ -38,6 +38,13 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
+        post_content: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [10]
+            },
+        },
         post_url: {
             type: DataTypes.STRING,
             allowNull: false,

@@ -15,6 +15,7 @@ a {
     background-color: #ffffff00;
     text-decoration: none;
     color: black;
+    font-family: 'Libre Franklin', sans-serif;
 }
     /* NAV BAR */
 header {
@@ -139,4 +140,24 @@ main {
     width: 100px;
     height: 25px;
     border-radius: 5px;
+}
+
+/* Single Post */
+.post {
+    position: relative;
+    top: 75px;
+    border: 2px solid black;
+    padding: 15px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.meta {
+    display: flex;
+    flex-flow: column;
+}
+.meta a {
+    padding: 10px;
 }

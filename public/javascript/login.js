@@ -24,7 +24,7 @@ async function signupFormHandler(event) {
       }
     }
 };
-document.querySelector('#sign-up').addEventListener('submit', signupFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
 
 
 async function loginFormHandler(event) {
@@ -52,4 +52,4 @@ async function loginFormHandler(event) {
     }
   }
   
-document.querySelector('#log-in').addEventListener('submit', loginFormHandler);
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);

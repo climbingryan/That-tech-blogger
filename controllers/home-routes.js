@@ -28,7 +28,10 @@ router.get('/', (req, res) => {
   }).then(dbPostData => {
           // pass a single post object into the homepage 
       const posts = dbPostData.map(post => post.get({ plain: true }));
-      res.render('homepage', { posts });
+      res.render('homepage', {
+        posts,
+        loggedIn: req.session.loggedIn
+      });
   }).catch(err => {
       console.log(err);
       res.status(500).json(err)
@@ -36,7 +39,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  res.render('login');
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('login')
 });
 
 router.get('/post/:id', (req, res) => {

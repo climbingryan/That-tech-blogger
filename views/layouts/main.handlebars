@@ -23,12 +23,12 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                {{#unless LoggedIn}}
+                {{#if loggedIn}}
                     <button id="logout"><li>Log out</li></button>
                     <li><a href="/dashboard">Dashboard</a></li>
                 {{else}}        
                     <li><a href="/login">Login</a></li>
-                {{/unless}}
+                {{/if}}
             </ul>
         </nav>
     </header>

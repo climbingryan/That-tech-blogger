@@ -7,7 +7,6 @@
     {{post.vote_count}} point(s) by {{post.user.username}} on
     {{post.created_at}}
     |
-    {{post.post_content}}
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
   </div>
 </article>
@@ -34,5 +33,3 @@
   </section>
   {{/each}}
 </div>
-<script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>

@@ -44,8 +44,8 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        alert("you're logged in");
         document.location.replace('/');
+        alert("you're logged in")
       } else {
         alert(response.statusText);
       }

@@ -24,8 +24,8 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 {{#if loggedIn}}
-                    <button id="logout"><li>Log out</li></button>
                     <li><a href="/dashboard">Dashboard</a></li>
+                    <button id="logout"><li>Log out</li></button>
                 {{else}}        
                     <li><a href="/login">Login</a></li>
                 {{/if}}

@@ -18,7 +18,7 @@ async function signupFormHandler(event) {
       
       if(response.ok) {
           console.log('success');
-          alert("You're logged in");
+          alert("You've been signed up");
       } else {
           alert(response.statusText)
       }

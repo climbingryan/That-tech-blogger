@@ -1,16 +1,5 @@
 <div class="single-post-handeler">
-  <article class="post">
-    <div class="title">
-      <p>{{post.title}}</p>
-      <a href="{{post.post_url}}" target="_blank">link</a>
-    </div>
-    <div class="meta">
-      {{post.vote_count}} point(s) by {{post.user.username}} on
-      {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
-    </div>
-  </article>
+  {{> post-info post}}
 
   <form class="comment-form">
     <div class="comment-body-handler">

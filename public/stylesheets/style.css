@@ -212,7 +212,7 @@ main {
     border-radius: 10px;
     position: relative;
     top: 5px;
-    left: 50px;
+    left: 150px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -333,4 +333,56 @@ main {
 .new-post-form div button:hover {
     background-color: rgb(83, 235, 109);
     border: 1px solid rgb(83, 235, 109);
+}
+
+    /* edit post page */
+.back-to-dash {
+    position: relative;
+    right: 300px;
+}
+.edit-post-handler h2 {
+    text-align: center;
+}
+.epf-title {
+    position: relative;
+    top: 25px;
+}
+.epf-content {
+    position: relative;
+    top: 35px;
+}
+.epf-btn {
+    position: relative;
+    top: 50px;
+}
+.save-post-btn {
+    padding: 10px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(76, 217, 100);
+    border: 1px solid rgb(76, 217, 100);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+}
+.save-post-btn:hover {
+    background-color: rgb(83, 235, 109);
+    border: 1px solid rgb(83, 235, 109);
+}
+.delete-post-btn {
+    padding: 10px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(227,0,0);
+    border: 1px solid rgb(227,0,0);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+}
+.delete-post-btn:hover {
+    background-color: rgb(255,0,0);
+    border: 1px solid rgb(255,0,0);
+}
+.comment-form {
+    position: relative;
+    top: 80px;
+    left: 100px;
 }
